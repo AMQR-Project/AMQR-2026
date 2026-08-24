@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and IDEs
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Local data and generated outputs
+data/raw/
+data/processed/
+results/
+tmp/
+work/
+
+# Manuscript sources are maintained separately from the reproducibility code
+manuscript/
+
+# OS and local configuration
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.log
+
+# LaTeX build products, if manuscript sources are added later
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
