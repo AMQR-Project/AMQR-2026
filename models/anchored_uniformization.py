@@ -1,8 +1,9 @@
 """Distance-only intrinsic uniformization and anchor-indexed ranks.
 
-This module implements two related estimators used in the revised AMQR
-manuscript.  :class:`AnchorIndexedIntrinsicUniformizer` is the population-
-aligned estimator: it estimates one anchor-free transport from the empirical
+This module implements two related estimators used in the Adaptive Manifold
+Quantile Regions (AMQR) manuscript.
+:class:`AnchorIndexedIntrinsicUniformizer` is the population-aligned estimator:
+it estimates one anchor-free transport from the empirical
 law to an intrinsic-volume reference, then evaluates any user-specified anchor
 without refitting that transport.  Because a discrete optimal plan need not be
 Monge, its primary structural score is the target-space Wasserstein-2 distance

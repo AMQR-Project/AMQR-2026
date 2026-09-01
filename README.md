@@ -1,12 +1,12 @@
-# AMQR
+# Adaptive Manifold Quantile Regions (AMQR)
 
-Code accompanying the manuscript on distance-driven, anchor-indexed quantile
-regions for data supported on manifolds whose analytic geometry is unavailable.
-The estimator uses only pairwise dissimilarities: it estimates intrinsic
-geometry with a neighbourhood graph, constructs an intrinsic reference
-measure, and aligns it to a Euclidean reference through anchored optimal
-transport.  The resulting ranks define nested quantile regions around a
-data-supported anchor.
+Code accompanying the manuscript on Adaptive Manifold Quantile Regions for
+data supported on manifolds whose analytic geometry is unavailable.  AMQR
+learns latent metric--measure geometry and corrects sampling density using only
+pairwise dissimilarities.  It estimates intrinsic geometry with a neighbourhood
+graph, constructs an intrinsic reference measure, and aligns it through optimal
+transport.  The resulting ranks define an anchor-indexed family of nested
+quantile regions around a data-supported reference point.
 
 The repository currently contains the reproducibility code for the manuscript
 under review.  Raw datasets, generated results, and manuscript source files are
@@ -45,14 +45,17 @@ entry points.
 ## Data
 
 Raw data are not distributed in this repository.  The NASA battery analysis
-expects the downloaded dataset under
-`data/raw/battery_alt_dataset/`, or a custom path supplied through the script's
-command-line option.  Generated output is written below `results/`; both
-directories are ignored by Git.
+uses *An accelerated Life Testing Dataset for Lithium-Ion Batteries with
+Constant and Variable Loading Conditions*, version 0.0.1 (Fricke, Nascimento,
+and Viana, 2023).  Place its three folders, `regular_alt_batteries/`,
+`recommissioned_batteries/`, and `second_life_batteries/`, under
+`data/raw/battery_alt_dataset/`, or pass a different location with
+`--dataset-dir`.  Generated output is written below `results/`; both the raw
+data and generated results are ignored by Git.
 
 ## Reproducibility status
 
 Random seeds and output locations are exposed by the experiment scripts, and
 formal runs write machine-readable manifests or summaries alongside figures.
-The code package will remain private during anonymous review and can be
-archived with a permanent release after acceptance.
+The review snapshot is intended for anonymous reproducibility and can be
+archived as a versioned release after acceptance.

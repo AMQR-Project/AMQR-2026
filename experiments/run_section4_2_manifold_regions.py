@@ -1,4 +1,4 @@
-"""Section 4.2 simulations for anchor-indexed manifold quantile regions.
+"""Section 4.2 simulations for Adaptive Manifold Quantile Regions (AMQR).
 
 The script evaluates the current anchor-free AMQR estimator on four supports
 whose intrinsic metric and normalized volume are known to the simulator:

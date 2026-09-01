@@ -6,12 +6,15 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.ipynb_checkpoints/
+.codex/
 .coverage
 htmlcov/
 
 # Virtual environments and IDEs
 .venv/
 venv/
+env/
 .idea/
 .vscode/
 

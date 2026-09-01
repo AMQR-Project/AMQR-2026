@@ -1,10 +1,12 @@
 # Paper experiment entry points
 
 The scripts in this directory are the canonical reproducibility entry points
-for the current anchor-free, anchor-indexed AMQR manuscript.  Retired Legacy
-GW-radialization, per-anchor hard-transport, and exploratory data-analysis
-drivers have been removed.  Raw data are never modified by these scripts;
-every entry point writes to a dedicated directory under `results/`.
+for the Adaptive Manifold Quantile Regions (AMQR) manuscript.  Uniformization
+is fitted without an anchor, after which the fitted transport yields an
+anchor-indexed family of regions.  Retired legacy GW-radialization, per-anchor
+hard-transport, and exploratory data-analysis drivers have been removed.  Raw
+data are never modified by these scripts; every entry point writes to a
+dedicated directory under `results/`.
 
 Run all commands from the repository root with a Python environment containing
 the packages in `requirements.txt`.
